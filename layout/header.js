@@ -19,7 +19,7 @@ template.innerHTML = `
     ${styles}
     <nav>
         <ul>
-            <slot name="pages" />
+            <pages-co style="display:flex"></pages-co>
         </ul>
     </nav>
 `;
@@ -33,4 +33,4 @@ class Header extends HTMLElement {
   }
 }
 
-window.customElements.define("header-co", Header);
+window.customElements.define("header-layout-co", Header);

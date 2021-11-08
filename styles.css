@@ -12,56 +12,70 @@
 
 /* Side bar component */
 
-.sideBar{
+.sideBar {
   width: -webkit-fill-available;
-  border: solid .5px gray;
+  border: solid 0.5px gray;
   border-top: 5px solid #e6dfc0;
   padding: 10px 15px;
 }
-.sideBar div{
+.sideBar div {
   border-bottom: 1px solid #f3f3f3;
 }
-.sideBar div h2{
+.sideBar div h2 {
   font-size: 17px;
   color: #02257f;
   padding: 0 0 0 0;
 }
-.sideBar li{
+.sideBar li {
   font-size: 13px;
   list-style: none;
   text-align: justify;
 }
 .sideBar li::before {
-  content: "\2022"; 
-  color: #d59706; 
-  font-weight: bold; 
-  display: inline-block; 
-  width: 2em; 
-  margin-left: -1em; 
+  content: "\2022";
+  color: #d59706;
+  font-weight: bold;
+  display: inline-block;
+  width: 2em;
+  margin-left: -1em;
 }
 
-.sideBar li a{
-  text-decoration:  none;
+.sideBar li a {
+  text-decoration: none;
   color: #000;
 }
 
-.sideBar li a:hover{
+.sideBar li a:hover {
   color: #0063be;
 }
 
 /* *************************** */
 
-.left-sidebar{
-  width: 20%;
-}
-
-.main-news{
-  width: 60%;
+/* .test {
+  width: 50%;
+  border: solid;
   height: 500px;
-  background: gray;
+  padding: 5px 15px;
+  word-break: break-word;
 }
 
-.sec{
-  display: flex;
-  width: 100%;
+.test h2 {
+  font-size: 20px;
+  margin: 0 0 7px 0;
+  color: #0063be;
 }
+
+.test div{
+  display: flex;
+}
+
+.test div img {
+  width: 280px;
+  height: 172px;
+}
+
+.test div p {
+  font-size: 13px;
+  padding: 0 10px;
+  text-align: justify;
+} */

@@ -10,29 +10,19 @@
     </head>
 
     <body>
-        <header-co>
-            <pages-co slot="pages" style="display: flex; justify-content: center"></pages-co>
-        </header-co>
         
-        <div class="sec">
-            <section class="left-sidebar">
-                <search-co></search-co>
-                <sidebar-co title="عناوین خبری" ></sidebar-co>
-            </section>
-            <section class="main-news">
-                this is main news
-            </section>
-            <section class="left-sidebar">
-                <sidebar-co title="عناوین بسیار مهم" ></sidebar-co>
-            </section>
-        </div>
-
+        <header-layout-co></header-layout-co>
+        
+        <main-layout-co></main-layout-co>
+        
 
         <!-- Components Scripts -->
-        <script src="./layout/header.js"></script>
         <script src="./components/pages.js"></script>
         <script src="./components/searchBox.js"></script>
         <script src="./components/sideBar.js"></script>
+        <script src="./components/mainNews.js"></script>
+        <script src="./layout/header.js"></script>
+        <script src="./layout/main.js"></script>
     </body>
 
 </html>
