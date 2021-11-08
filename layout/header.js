@@ -4,6 +4,14 @@ const styles = `
     <style>
         nav{
             border : solid;
+            background : #00247e;
+        }
+        ul{
+            display : flex;
+            list-style: none;
+            margin : 0;
+            align-items : center;
+            justify-content : center;
         }
     </style>
 `
