@@ -26,6 +26,7 @@ mainLayout.innerHTML = `
         </section>
         <section class="main-news">
             <main-news-co></main-news-co>
+            <news-suggest-co></news-suggest-co>
         </section>
         <section class="left-sidebar">
             <sidebar-co title="عناوین بسیار مهم" ></sidebar-co>

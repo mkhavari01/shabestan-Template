@@ -51,31 +51,22 @@
 
 /* *************************** */
 
-/* .test {
-  width: 50%;
-  border: solid;
-  height: 500px;
-  padding: 5px 15px;
-  word-break: break-word;
-}
-
-.test h2 {
-  font-size: 20px;
-  margin: 0 0 7px 0;
-  color: #0063be;
-}
-
-.test div{
+/* .test-wrapper{
   display: flex;
+  justify-content: space-around;
 }
 
-.test div img {
-  width: 280px;
-  height: 172px;
+.test{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.test div p {
-  font-size: 13px;
-  padding: 0 10px;
-  text-align: justify;
+.test img{
+  width: 160px;
+  height: 97px;
+}
+
+.test h2{
+  font-size: 14px;
 } */
