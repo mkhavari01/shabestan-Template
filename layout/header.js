@@ -1,9 +1,8 @@
-const template = document.createElement('template');
+const template = document.createElement("template");
 
 const styles = `
     <style>
         nav{
-            border : solid;
             background : #00247e;
         }
         ul{
@@ -14,8 +13,7 @@ const styles = `
             justify-content : center;
         }
     </style>
-`
-
+`;
 
 template.innerHTML = `
     ${styles}
@@ -24,16 +22,15 @@ template.innerHTML = `
             <slot name="pages" />
         </ul>
     </nav>
-`
+`;
 
-class Header extends HTMLElement{
-    constructor(){
-        super();
+class Header extends HTMLElement {
+  constructor() {
+    super();
 
-        this.attachShadow({mode : 'open'});
-        this.shadowRoot.appendChild(template.content.cloneNode(true));
+    this.attachShadow({ mode: "open" });
+    this.shadowRoot.appendChild(template.content.cloneNode(true));
+  }
+}
 
-    }
-};
-
-window.customElements.define('header-co',Header);
+window.customElements.define("header-co", Header);

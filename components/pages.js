@@ -1,5 +1,5 @@
-const headerPagination = document.createElement('template');
-const headerPaginationStyle = `
+const pages = document.createElement('template');
+const pagesStyle = `
     <style>
         ul{
             display : flex;
@@ -14,7 +14,6 @@ const headerPaginationStyle = `
             padding: 0 15px 0 15px;
         }
         li a:hover{
-            border : solid .5px black;
             color : #00247e ; 
             background : #02acdd;
         }
@@ -35,7 +34,7 @@ async function main() {
     //OPTION 1
     // getJson(apiUrl)
     //     .then(data => console.log(data));
-    html += headerPaginationStyle
+    html += pagesStyle
     //OPTION 2
     jsondata = await getJson(apiUrl)
     jsondata.forEach((element)=>{
@@ -43,19 +42,19 @@ async function main() {
         html += htmlSegment
     })
 
-    headerPagination.innerHTML = html
+    pages.innerHTML = html
 
-    class HeaderPagination extends HTMLElement{
+    class Pages extends HTMLElement{
         constructor(){
             super();
     
             this.attachShadow({mode : 'open'});
-            this.shadowRoot.appendChild(headerPagination.content.cloneNode(true));
+            this.shadowRoot.appendChild(pages.content.cloneNode(true));
     
         }
     };
     
-    window.customElements.define('pages-co',HeaderPagination);
+    window.customElements.define('pages-co',Pages);
 }
 
 main();
