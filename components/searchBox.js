@@ -3,7 +3,6 @@ const searchBox = document.createElement('template');
 const searchBoxStyle = `
     <style>
         form{
-            width: fit-content;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -15,6 +14,7 @@ const searchBoxStyle = `
             outline: none;
             height : 25px;
             font-family : yekan;
+            width : -webkit-fill-available;
         }
 
         form img{

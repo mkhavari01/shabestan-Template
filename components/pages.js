@@ -16,6 +16,7 @@ const pagesStyle = `
         li a:hover{
             color : #00247e ; 
             background : #02acdd;
+            transition : .4s;
         }
     </style>
 `

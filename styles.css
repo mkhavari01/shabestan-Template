@@ -10,13 +10,12 @@
   font-family: yekan;
 }
 
+/* Side bar component */
+
 .sideBar{
   width: 223px;
-  /* height: 500px; */
-  /* background: blueviolet; */
   border: solid .5px gray;
   border-top: 5px solid #e6dfc0;
-  margin: 20px;
   padding: 10px 15px;
 }
 .sideBar div{
@@ -33,12 +32,12 @@
   text-align: justify;
 }
 .sideBar li::before {
-  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #d59706; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 2em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  content: "\2022"; 
+  color: #d59706; 
+  font-weight: bold; 
+  display: inline-block; 
+  width: 2em; 
+  margin-left: -1em; 
 }
 
 .sideBar li a{
@@ -48,4 +47,10 @@
 
 .sideBar li a:hover{
   color: #0063be;
+}
+
+/* *************************** */
+
+.left-sidebar{
+  width: 200px;
 }

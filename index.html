@@ -13,32 +13,18 @@
         <header-co>
             <pages-co slot="pages" style="display: flex; justify-content: center"></pages-co>
         </header-co>
-        <!-- <form>
-            <input />
-            <img src="./assets/images/search.svg" alt="search" />
-        </form> -->
-        <search-co></search-co>
-        <aside class="sideBar">
-            <div>
-                <h2>
-                    عناوین خبری
-                </h2>
-            </div>
-            <li>
-                <a href="#">
-                الگوي مناسب براي رفع موانع در مدیریت جامع موقوفات بقاع متبرکه تدوين می شود
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                راه و رسم مدیریت را از قرآن بیاموزیم
-                </a>
-            </li>
-        </aside>
+        
+        <div class="left-sidebar">
+            <search-co></search-co>
+            <sidebar-co title="عناوین خبری" width="-webkit-fill-available"></sidebar-co>
+        </div>
+
+
         <!-- Components Scripts -->
         <script src="./layout/header.js"></script>
         <script src="./components/pages.js"></script>
         <script src="./components/searchBox.js"></script>
-</body>
+        <script src="./components/sideBar.js"></script>
+    </body>
 
 </html>
