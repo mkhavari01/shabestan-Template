@@ -44,8 +44,6 @@ async function main() {
             this.shadowRoot.appendChild(sideBar.content.cloneNode(true));
 
             this.shadowRoot.querySelector('.sideBar-title').innerText = this.getAttribute('title');
-            // put the width -webkit-fill-available if you want to control it by its parent
-            this.shadowRoot.querySelector('.sideBar').style.width = this.getAttribute('width'); 
         }
     };
     

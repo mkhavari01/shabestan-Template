@@ -13,7 +13,7 @@
 /* Side bar component */
 
 .sideBar{
-  width: 223px;
+  width: -webkit-fill-available;
   border: solid .5px gray;
   border-top: 5px solid #e6dfc0;
   padding: 10px 15px;
@@ -52,5 +52,16 @@
 /* *************************** */
 
 .left-sidebar{
-  width: 200px;
+  width: 20%;
+}
+
+.main-news{
+  width: 60%;
+  height: 500px;
+  background: gray;
+}
+
+.sec{
+  display: flex;
+  width: 100%;
 }
