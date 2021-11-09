@@ -17,12 +17,13 @@ async function main() {
     let extraHtml = ``
     let html = ``
     let jsondata = "";
-    let apiUrl = "https://jsonplaceholder.ir/users"
+    let apiUrl = "https://jsonplaceholder.ir/posts"
 
     //OPTION 2
     jsondata = await getJson(apiUrl)
+    jsondata.length = 10;
     jsondata.forEach((element)=>{
-        let htmlSegment = `<li><a href="#">${element.address.street}</a></li>` 
+        let htmlSegment = `<li><a href="#">${element.body}</a></li>` 
         extraHtml += htmlSegment
     })
     html += `

@@ -19,7 +19,7 @@ template.innerHTML = `
     ${styles}
     <nav>
         <ul>
-            <pages-co style="display:flex"></pages-co>
+            <pages-co></pages-co>
         </ul>
     </nav>
 `;

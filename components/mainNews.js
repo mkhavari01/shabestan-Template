@@ -27,6 +27,11 @@ const mainNewsStyle = `
             padding: 0 10px;
             text-align: justify;
         }
+        @media screen and (max-width: 560px){
+            .main-news div{
+                display : block;
+            }
+        }
     </style>
 `
 mainNews.innerHTML =`

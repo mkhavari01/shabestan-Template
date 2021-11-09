@@ -21,6 +21,11 @@ const newsSuggestStyle = `
         .test h2{
             font-size: 14px;
         }
+        @media screen and (max-width: 560px){
+            .test-wrapper{
+                flex-direction : column;
+            }
+        }
     </style>
 `
 newsSuggest.innerHTML =`

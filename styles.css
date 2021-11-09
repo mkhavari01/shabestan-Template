@@ -14,7 +14,7 @@
 
 .sideBar {
   width: -webkit-fill-available;
-  border: solid 0.5px gray;
+  /* border: solid 0.5px gray; */
   border-top: 5px solid #e6dfc0;
   padding: 10px 15px;
 }
