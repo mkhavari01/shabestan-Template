@@ -3,8 +3,11 @@ const pagesStyle = `
     <style>
         ul{
             display : flex;
+            list-style: none;
+            margin : 0;
+            align-items : center;
+            justify-content : center;
         }
-        
         li{
             color : blue;
         }
@@ -18,12 +21,15 @@ const pagesStyle = `
             background : #02acdd;
             transition : .4s;
         }
+        @media screen and (max-width: 960px) {
+            ul {
+                display : block
+            }
+        }
     </style>
 `
 
-let html = ``
-let jsondata = "";
-let apiUrl = "https://jsonplaceholder.ir/users"
+
 
 async function getJson(url) {
     let response = await fetch(url);
@@ -32,6 +38,10 @@ async function getJson(url) {
 }
 
 async function main() {
+    let html = ``
+    let extraHtml = ""
+    let jsondata = "";
+    let apiUrl = "https://jsonplaceholder.ir/users"
     //OPTION 1
     // getJson(apiUrl)
     //     .then(data => console.log(data));
@@ -40,9 +50,14 @@ async function main() {
     jsondata = await getJson(apiUrl)
     jsondata.forEach((element)=>{
         let htmlSegment = `<li><a href="#">${element.address.city}</a></li>` 
-        html += htmlSegment
+        extraHtml += htmlSegment
     })
-
+    html += `
+        ${pagesStyle}
+        <ul>
+            ${extraHtml}
+        </ul>
+    `
     pages.innerHTML = html
 
     class Pages extends HTMLElement{

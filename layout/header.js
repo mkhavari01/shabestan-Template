@@ -5,22 +5,13 @@ const styles = `
         nav{
             background : #00247e;
         }
-        ul{
-            display : flex;
-            list-style: none;
-            margin : 0;
-            align-items : center;
-            justify-content : center;
-        }
     </style>
 `;
 
 template.innerHTML = `
     ${styles}
     <nav>
-        <ul>
-            <pages-co></pages-co>
-        </ul>
+        <pages-co></pages-co>
     </nav>
 `;
 
