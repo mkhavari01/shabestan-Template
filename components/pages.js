@@ -82,6 +82,5 @@ async function main() {
 main();
 
 function bgChanger(x){
-    console.log(Pages)
-    console.log(x.shadowRoot.querySelector("#home-link").style.background="red")
+    console.log(document.querySelector("body > header-layout-co").shadowRoot.querySelector("nav > pages-co").shadowRoot.querySelector("#home-link > a"))
 }
