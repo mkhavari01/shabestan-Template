@@ -59,6 +59,7 @@ async function main() {
     html += `
         ${pagesStyle}
         <ul>
+            <li id="home-link"><a href="../index.html">صفحه نخست</a></li>
             ${extraHtml}
         </ul>
     `
@@ -70,7 +71,8 @@ async function main() {
     
             this.attachShadow({mode : 'open'});
             this.shadowRoot.appendChild(pages.content.cloneNode(true));
-    
+            
+            // bgChanger(this)
         }
     };
     
@@ -79,6 +81,7 @@ async function main() {
 
 main();
 
-function bgChanger(){
-    console.log('in here we gonna take the input value to realize which route you are in then we change the color of background');
+function bgChanger(x){
+    console.log(Pages)
+    console.log(x.shadowRoot.querySelector("#home-link").style.background="red")
 }
