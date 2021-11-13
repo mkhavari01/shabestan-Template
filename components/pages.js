@@ -82,6 +82,7 @@ async function main() {
 main();
 
 function bgChanger(x){
-    console.log(Pages)
-    console.log(x.shadowRoot.querySelector("#home-link").style.background="red")
+    // console.log(Pages)
+    // console.log(x.shadowRoot.querySelector("#home-link").style.background="red");
+    console.log('hovvered');
 }
