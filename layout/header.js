@@ -34,7 +34,9 @@ template.innerHTML = `
     <nav>
         <pages-co></pages-co>
     </nav>
+    <nestedpages-co></nestedpages-co>
 `;
+
 
 class Header extends HTMLElement {
   constructor() {

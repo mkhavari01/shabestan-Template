@@ -25,7 +25,9 @@ const pagesStyle = `
         }
         @media screen and (max-width: 960px) {
             ul {
-                display : block
+                display : block;
+                width : fit-content;
+                padding-right : 30px;
             }
         }
     </style>
@@ -76,3 +78,7 @@ async function main() {
 }
 
 main();
+
+function bgChanger(){
+    console.log('in here we gonna take the input value to realize which route you are in then we change the color of background');
+}
