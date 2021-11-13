@@ -1,4 +1,5 @@
 const template = document.createElement("template");
+const nestedValue = document.querySelector('.pageValue').value
 
 const styles = `
     <style>
@@ -28,21 +29,26 @@ const styles = `
 
 template.innerHTML = `
     ${styles}
+    <slot name="pageValue"></slot>
     <div class="menu">
         <img src="../assets/images/menu.svg" width="100px"/>
     </div>
     <nav>
         <pages-co></pages-co>
     </nav>
-    <nestedpages-co></nestedpages-co>
+    <div class="nested-wrapper">
+
+    </div>
 `;
 
+console.log()
 
 class Header extends HTMLElement {
   constructor() {
     super();
     this.state = {
-        isShown : false
+        isShown : false,
+        isNested : nestedValue
     }
 
     this.attachShadow({ mode: "open" });
@@ -56,9 +62,13 @@ class Header extends HTMLElement {
         }else{
             this.shadowRoot.querySelector('nav').style.display = 'none';
         }
-    })
-
+    });
+    
+    if(this.state.isNested == "true"){
+        this.shadowRoot.querySelector('.nested-wrapper').innerHTML = "<nestedpages-co></nestedpages-co>"
+    }
   }
+  
 }
 
 window.customElements.define("header-layout-co", Header);

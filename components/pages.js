@@ -53,7 +53,7 @@ async function main() {
     //OPTION 2
     jsondata = await getJson(apiUrl)
     jsondata.forEach((element)=>{
-        let htmlSegment = `<li><a href="#">${element.address.city}</a></li>` 
+        let htmlSegment = `<li><a href="../pages/test.html">${element.address.city}</a></li>` 
         extraHtml += htmlSegment
     })
     html += `
