@@ -8,6 +8,9 @@ const styles = `
         }
         nav{
             background : #00247e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .menu{
             display : none

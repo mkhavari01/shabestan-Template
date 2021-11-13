@@ -5,8 +5,10 @@ const pagesStyle = `
             display : flex;
             list-style: none;
             margin : 0;
+            padding : 0;
             align-items : center;
-            justify-content : center;
+            justify-content : flex-start;
+            width: 1024px;
         }
         li{
             color : blue;
