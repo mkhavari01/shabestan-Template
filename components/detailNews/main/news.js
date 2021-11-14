@@ -8,7 +8,7 @@ newsStyles = `
         p{
             font-size : 13px;
             text-align : justify;
-            padding : 5px 10px;
+            padding : 5px 0px;
         }
     </style>
 `

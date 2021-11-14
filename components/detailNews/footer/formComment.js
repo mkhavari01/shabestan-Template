@@ -16,7 +16,7 @@ formCommentStyles = `
             border : none;
             font-family : yekan;
             background-color: #3D3D3E;
-            padding: 5px;
+            padding: 5px 25px;
             cursor: pointer;
             float: left;
             text-align: center;
