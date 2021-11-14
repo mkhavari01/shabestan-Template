@@ -4,7 +4,7 @@ commentStyles = `
     <style>
         div{
             background : #00247E;
-            margin : 0 0 10px 0;
+            margin : 10px 0 10px 0;
             padding : 0 10px;
             color : #fff;
         }

@@ -1,0 +1,27 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.wrapper-holder{
+    width: 1024px;
+}
+
+sidebar-co{
+    width: 220px;
+    margin: 10px 10px;;
+}
+
+@media screen and (max-width: 960px){
+    .wrapper{
+        flex-direction: column;
+    }
+    sidebar-co{
+        width: fit-content;
+    }
+    .wrapper-holder{
+        width: fit-content;
+        margin: 0 10px;
+    }
+}

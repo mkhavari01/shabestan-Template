@@ -10,7 +10,7 @@ shortDetailStyles = `
         section div{
             display: flex;
             flex-direction: column;
-            margin : 0 30px;
+            margin : 0 0 0 30px;
             word-break : break-word;
             text-align : justify;
         }
@@ -35,6 +35,35 @@ shortDetailStyles = `
             margin: 0;
             padding : 10px;
             flex : 1;
+        }
+        @media screen and (max-width: 768px){
+            h2{
+                font-size : 20px;
+            }
+            section{
+                flex-direction : column;
+            }
+        }
+        @media screen and (max-width: 425px){
+            section{
+                align-items : center;
+            }
+            img{
+                width : 278px;
+                height : 176px;
+            }
+            section div{
+                margin : 0 20px;
+            }
+            h2{
+                font-size : 16px;
+            }
+            h2,small{
+                padding : 0;
+            }
+            p{
+                font-size : 14px;
+            }
         }
     </style>
 `

@@ -13,14 +13,17 @@
         <header-layout-co>
             <input slot="pageValue" class="pageValue" type="hidden" value="false"/>
         </header-layout-co>
-        <newsdata-co></newsdata-co>
-        <shortdetail-co></shortdetail-co>
-        <news-co></news-co>
-        <printing-co></printing-co>
-        <keyword-co></keyword-co>
-        <comment-co></comment-co>
+        <div class="wrapper">
+            <div class="wrapper-holder">
+                <headernews-co></headernews-co>
+                <mainnews-co></mainnews-co>
+                <footernews-co></footernews-co>
+            </div>
+            <sidebar-co title="عناوین بسیار مهم"></sidebar-co>
+        </div>
         <!-- components Scripts -->
         <script src="../components/home/pages.js"></script>
+        <script src="../components/home/sideBar.js"></script>
         <script src="../components/detailNews/header/newsData.js"></script>
         <script src="../components/detailNews/header/shortDetail.js"></script>
         <script src="../components/detailNews/main/news.js"></script>
@@ -29,5 +32,8 @@
         <script src="../components/detailNews/footer/comment.js"></script>
         <script src="../components/detailNews/footer/formComment.js"></script>
         <script src="../layout/home/header.js"></script>
+        <script src="../layout/newsDetail/headerNews.js"></script>
+        <script src="../layout/newsDetail/mainNews.js"></script>
+        <script src="../layout/newsDetail/footerNews.js"></script>
 </body>
 </html>

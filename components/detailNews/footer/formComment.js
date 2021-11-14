@@ -2,8 +2,14 @@ const formComment= document.createElement('template');
 
 formCommentStyles = `
     <style>
+        div{
+            display : flex;
+            margin : 10px 0;
+        }
         textarea{
             height : 128px;
+            width : 100%;
+            resize : none;
         }
         button {
             outline : none;
@@ -15,6 +21,19 @@ formCommentStyles = `
             float: left;
             text-align: center;
             color: #fff
+        }
+        label{
+            width : 30%;
+            padding : 0 10px;
+        }
+        input{
+            width : -webkit-fill-available;
+        }
+        button < div{
+            background : blue;
+        }
+        #submit{
+            justify-content : flex-end;
         }
     </style>
 `
@@ -34,7 +53,7 @@ formComment.innerHTML = `
             <label for="comment">متن نظر :</label>
             <textarea id="comment"></textarea>
         </div>
-        <div>
+        <div id="submit">
             <button type="submit">ارسال</button>
         </div>
     </form>

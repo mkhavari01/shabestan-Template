@@ -4,6 +4,7 @@ newsDataStyles = `
     <style>
         div{
             border : 1px solid #b8b8b8;
+            margin : 10px 0;
         }
         ul{
             display : flex;
