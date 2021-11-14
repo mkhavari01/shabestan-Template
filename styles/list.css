@@ -4,3 +4,19 @@
     align-items: center;
     margin-top: 20px;
 }
+
+#content topnews-co{
+    width: 1024px;
+}
+
+@media screen and (max-width: 1024px){
+    #content topnews-co{
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #content topnews-co{
+        width: 100%;
+    }
+}

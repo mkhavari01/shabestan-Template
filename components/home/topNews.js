@@ -19,6 +19,10 @@ const topNewsStyle = `
         color : #0063be;
         margin : 5px 0;
     }
+    .sideBar h3 a{
+        color : #0063be;
+        text-decoration : none;
+    }
     .sideBar section{
         display : flex;
 
@@ -29,6 +33,9 @@ const topNewsStyle = `
     }
     .sideBar .info:hover{
         background : #f3f3f3;
+    }
+    .info section a{
+        display : flex;
     }
     .sideBar img{
         width : 150;
@@ -59,9 +66,9 @@ async function main() {
         let htmlSegment = `
             <div class="info">
                 <small>${element.title} </small>
-                <h3>${element.title}</h3>
+                <h3><a href="#">${element.title}</a></h3>
                 <section>
-                    <img src=${element.thumbnailUrl}/>
+                    <a href="#"><img src=${element.thumbnailUrl}/></a>
                     <p>محفل انس و معارف قرآن کریم با حضور نماینده ولی فقیه در امور حج و زیارت و با رعایت پروتکل های بهداشتی در کانون طه گرگان برگزار شد.</p>
                 </section>
             </div>
@@ -87,6 +94,11 @@ async function main() {
             this.shadowRoot.appendChild(topNews.content.cloneNode(true));
 
             this.shadowRoot.querySelector('.sideBar-title').innerText = this.getAttribute('title');
+            
+            if(this.hasAttribute('sideBar-width')){
+                this.shadowRoot.querySelector('.sideBar').style.width = this.getAttribute('sideBar-width');
+            }
+            
         }
     };
     
