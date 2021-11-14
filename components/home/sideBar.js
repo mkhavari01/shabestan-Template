@@ -1,6 +1,6 @@
 const sideBar = document.createElement('template');
 const sideBarStyle = `
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
 `
 
 
