@@ -82,5 +82,19 @@ async function main() {
 main();
 
 function bgChanger(x){
-    console.log(document.querySelector("body > header-layout-co").shadowRoot.querySelector("nav > pages-co").shadowRoot.querySelector("#home-link > a"))
+    let selectedPage = document.querySelector("body > header-layout-co").shadowRoot.querySelector("nav > pages-co").shadowRoot.querySelector("#home-link > a");
+    console.log('selectedPage',selectedPage.style.background="#02acdd")
+}
+
+function bgReturn(){
+    let selectedPage = document.querySelector("body > header-layout-co").shadowRoot.querySelector("nav > pages-co").shadowRoot.querySelector("#home-link > a");
+    selectedPage.style.background="#00247e"
+    console.log()
+    selectedPage.onmouseover =function(){
+        console.log('fgeirugfreui');
+        selectedPage.style.background="#02acdd"
+    }
+    selectedPage.onmouseout = function() {
+        selectedPage.style.background="#00247e"
+    }
 }

@@ -44,7 +44,7 @@ async function main() {
     jsondata = await getJson(apiUrl)
     jsondata.length = 9 ;
     jsondata.forEach((element)=>{
-        let htmlSegment = `<li><a href="#" onmouseover="bgChanger()">${element.name}</a></li>` 
+        let htmlSegment = `<li><a href="#" onmouseover="bgChanger()" onmouseout="bgReturn()">${element.name}</a></li>` 
         extraHtml += htmlSegment
     })
     html += `
