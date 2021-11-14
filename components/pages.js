@@ -60,6 +60,8 @@ async function main() {
         ${pagesStyle}
         <ul>
             <li id="home-link"><a href="../index.html">صفحه نخست</a></li>
+            <li id="home-link"><a href="../pages/test.html">صفحه های دیگر</a></li>
+            <li id="home-link"><a href="../pages/detailNews.html">صفحه خبر</a></li>
             ${extraHtml}
         </ul>
     `
