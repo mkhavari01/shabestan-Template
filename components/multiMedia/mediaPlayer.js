@@ -30,7 +30,7 @@ class MediaPlayer extends HTMLElement{
         this.shadowRoot.innerHTML = `
         ${mediaPlayerStyle}
         <div>
-            <img src="http://media.shabestan.ir/Larg_ph/1400/08/23/IMG10312846.jpg" alt="news" width="724px" height="413px"/>
+            <img src="http://media.shabestan.ir/Larg_ph/1400/08/24/IMG00032420.jpg" alt="news" width="724px" height="413px"/>
             <div id="caption">
                 اولین جشنواره ملی هنرهای تجسمی 
             </div>
