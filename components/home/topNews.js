@@ -25,7 +25,8 @@ const topNewsStyle = `
     }
     .sideBar p{
         font-size : 13px;
-        padding : 0 10px 0 0;
+        padding : 0 10px 0 10px;
+        text-align : justify;
     }
     .sideBar .info:hover{
         background : #f3f3f3;
@@ -87,6 +88,11 @@ async function main() {
             this.shadowRoot.appendChild(topNews.content.cloneNode(true));
 
             this.shadowRoot.querySelector('.sideBar-title').innerText = this.getAttribute('title');
+
+            if(this.hasAttribute('sideBar-width')){
+                this.shadowRoot.querySelector('.sideBar').style.width = this.getAttribute('sideBar-width');
+            }
+            
         }
     };
     
