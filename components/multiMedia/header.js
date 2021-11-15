@@ -16,6 +16,12 @@ multiMediaHeaderStyle = `
         li {
             padding: 5px 15px;
         }
+        li:hover{
+            background : #00247e;
+        }
+        li:hover a{
+            color : #ddd;
+        }
         a {
             text-decoration: none;
             color: #fff;

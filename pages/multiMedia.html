@@ -8,15 +8,32 @@
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-    
-    <multimedia-header-co></multimedia-header-co>
-    
-    <section style="display: flex;margin: 20px 15%;">
-        <mediaplayer-co></mediaplayer-co>
-        <topmedias-co></topmedias-co>
-    </section>
-    
-    <medialist-co></medialist-co>
+    <style>
+        .main{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+        .content{
+            width: 1024px;
+        }
+        .content-wrapper{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <div class="content-wrapper">
+        <section class="content">
+            <multimedia-header-co></multimedia-header-co>
+        
+            <section class="main">
+                <mediaplayer-co></mediaplayer-co>
+                <topmedias-co></topmedias-co>
+            </section>
+            
+            <medialist-co></medialist-co>
+        </section>
+    </div>
     
     
     <script src="../components/multiMedia/header.js"></script>
