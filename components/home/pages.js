@@ -65,7 +65,8 @@ async function main() {
             <li id="home-link"><a href="../pages/test.html">صفحه های دیگر</a></li>
             <li id="home-link"><a href="../pages/detailNews.html">صفحه خبر</a></li>
             <li id="home-link"><a href="../pages/list.html">لیست مطالب</a></li>
-            ${extraHtml}
+            <li id="home-link"><a href="../pages/multiMedia.html">چند رسانه ای</a></li>
+            <!-- ${extraHtml} -->
         </ul>
     `
     pages.innerHTML = html
