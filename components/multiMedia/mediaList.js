@@ -30,6 +30,7 @@ const mediaListStyle = `
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-wrap : wrap;
         }
         h2{
             display: flex;

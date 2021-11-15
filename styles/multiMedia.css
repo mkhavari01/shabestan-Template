@@ -1,0 +1,12 @@
+.main{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.content{
+    width: 1024px;
+}
+.content-wrapper{
+    display: flex;
+    justify-content: center;
+}
