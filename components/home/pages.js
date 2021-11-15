@@ -9,6 +9,7 @@ const pagesStyle = `
             align-items : center;
             justify-content : flex-start;
             width: 1024px;
+            flex-wrap : wrap;
         }
         li{
             color : blue;
@@ -51,7 +52,8 @@ async function main() {
     //     .then(data => console.log(data));
     html += pagesStyle
     //OPTION 2
-    jsondata = await getJson(apiUrl)
+    jsondata = await getJson(apiUrl);
+    jsondata.length = 5;
     jsondata.forEach((element)=>{
         let htmlSegment = `<li><a href="../pages/test.html">${element.address.city}</a></li>` 
         extraHtml += htmlSegment
@@ -62,6 +64,7 @@ async function main() {
             <li id="home-link"><a href="../pages/home.html">صفحه نخست</a></li>
             <li id="home-link"><a href="../pages/test.html">صفحه های دیگر</a></li>
             <li id="home-link"><a href="../pages/detailNews.html">صفحه خبر</a></li>
+            <li id="home-link"><a href="../pages/list.html">لیست مطالب</a></li>
             ${extraHtml}
         </ul>
     `
