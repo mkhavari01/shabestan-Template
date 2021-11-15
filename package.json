@@ -1,0 +1,22 @@
+{
+  "name": "shabestan-template",
+  "version": "1.0.0",
+  "description": "redesigning shabestan news agency template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkhavari81/shabestan-Template.git"
+  },
+  "author": "Mahdi Khavari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkhavari81/shabestan-Template/issues"
+  },
+  "homepage": "https://github.com/mkhavari81/shabestan-Template#readme",
+  "dependencies": {
+    "simple-slider": "^1.0.1"
+  }
+}
