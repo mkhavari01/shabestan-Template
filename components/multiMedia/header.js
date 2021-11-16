@@ -54,6 +54,16 @@ class MultiMediaHeader extends HTMLElement{
                     </a>
                 </li>
                 <li>
+                    <a href="../pages/specialPage.html">
+                        صفحه های اختصاصی 
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/personalWeblogs.html">
+                        وبلاگ های شخصی 
+                    </a>
+                </li>
+                <li>
                     <a href="../pages/home.html">
                         برگشت به صفحه اصلی 
                     </a>
