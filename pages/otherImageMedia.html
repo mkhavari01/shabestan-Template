@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/multiMedia.css">
+</head>
+<body>
+    
+    <div class="content-wrapper">
+        <section class="content">
+            <multimedia-header-co></multimedia-header-co>
+            
+            <div style="display: flex; align-items: center;justify-content: space-between;">
+                <otherslider-co></otherslider-co>
+                <mediabox-co></mediabox-co>
+            </div>
+            
+            <medialist-co></medialist-co>
+        </section>
+    </div>
+    <script src="../components/multiMedia/header.js"></script>
+    <script src="../components/multiMedia/mediaList.js"></script>
+    <script src="../components/mediaPage/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
+    <script>
+        simpleslider.getSlider();
+    </script>
+    <script src="../components/otherImageMedia/otherSlider.js"></script>
+    <script src="../components/otherImageMedia/mediaBox.js"></script>
+</body>
+</html>

@@ -39,18 +39,23 @@ class MultiMediaHeader extends HTMLElement{
         <nav>
             <ul>
                 <li style="background: #00247e;">
-                    <a href="#" style="color: #ddd;">
-                        ایتم دو 
+                    <a href="../pages/multiMedia.html" style="color: #ddd;">
+                        چند رسانه ای 
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        ایتم یک 
+                    <a href="../pages/imageMedia.html">
+                        عکس ها 
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        ایتم سه 
+                    <a href="../pages/otherImageMedia.html">
+                        عکس های دیگر 
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/home.html">
+                        برگشت به صفحه اصلی 
                     </a>
                 </li>
             </ul>
