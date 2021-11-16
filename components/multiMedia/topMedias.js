@@ -44,7 +44,7 @@ class TopMedias extends HTMLElement{
         super();
 
         this.attachShadow({mode : 'open'});
-        this.shadowRoot.innerHTML = `
+        topMedias.innerHTML = `
             ${topMediasStyle}
         <aside>
             <h3>
@@ -82,6 +82,11 @@ class TopMedias extends HTMLElement{
             </section>
         </aside>
         `;
+        this.shadowRoot.appendChild(topMedias.content.cloneNode(true));
+        if(this.hasAttribute('sideBar-width')){
+            this.shadowRoot.querySelector('aside').style.width = this.getAttribute('sideBar-width');
+            this.shadowRoot.querySelector('aside').style.margin = this.getAttribute('sideBar-margin');
+        }
     }
 }
 

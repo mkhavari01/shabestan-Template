@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/multiMedia.css">
+</head>
+<body>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 30px;
+            color: #0062be;
+            
+        }
+        h2{
+            font-size: 17px;
+            color: #0063be;
+        }
+        p{
+            font-size: 13px;
+            text-align: justify;
+        }
+        .newsInfo{
+            display: flex;
+            width: 98%;
+            text-align: justify;
+        }
+        .newsInfo div {
+            display: flex;
+            flex-direction: column;
+            padding: 0 10px 0 0;
+            word-break: break-word;
+        }
+        .newsInfo div span{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            direction: ltr;
+        }
+        .content-holder{
+            display: flex;
+            justify-content: space-between;
+        }
+        .page-info{
+            height: 244px;
+            margin: 0 0px 10px 0;
+            padding-right: 10px;
+            border-right: solid 0.5px gray;
+        }
+    </style>
+    
+    
+    <div class="content-wrapper">
+        <section class="content">
+            <multimedia-header-co></multimedia-header-co>
+            <h1>
+                صفحه اختصاصی آست الله نوری همدانی
+            </h1>
+            <img src="http://media.shabestan.ir/Original/1394/04/18/IMG18225733.jpg" alt="" width="100%">
+            <section class="content-holder">
+                <div>
+                    <section class="newsInfo">
+                        <img src="http://media.shabestan.ir/Larg/1399/12/20/IMG13244540.jpg" alt="">
+                        <div>
+                            <small>
+                                آیت‌الله نوری همدانی:
+                            </small>
+                            <h2>
+                                اساس و قوام کشور، مردم هستند/مردم را به سلاح بصیرت مجهز کنیم
+                            </h2>
+                            <p>
+                                آیت‌الله نوری همدانی با اشاره به اینکه در سیاست الهی ستون دین مردم هستند گفت:‌ اساس و قوام کشور را مردم تشکیل می دهند و برای مساله دفاع نیز ما باید مردم را بیدار کنیم.
+                            </p>
+                            <span>
+                                تاریخ: ۱۴۰۰/۸/۶سرویس: قم
+                            </span>
+                        </div>
+                    </section>
+                    <div>
+                        <topnews-co></topnews-co>
+                    </div>
+                </div>
+                <div>
+                    <div class="page-info">
+                        <h2>
+                            درباره این صفحه
+                        </h2>
+                        <p>
+                            این صفحه به آیت الله حسین نوری همدانی اختصاص داشته و شما می توانید آخرین مطالب و اخبار مرتبط را در این صفحه دنبال کنید.
+                        </p>
+                    </div>
+                    <topmedias-co sideBar-width="100%" sideBar-margin="0 10px"></topmedias-co>
+                </div>
+            </section>
+        </section>
+    </div>
+    <script src="../components/multiMedia/topMedias.js"></script>
+    <script src="../components/home/topNews.js"></script>
+    <script src="../components/multiMedia/header.js"></script>
+</body>
+</html>
