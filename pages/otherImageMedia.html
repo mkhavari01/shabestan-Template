@@ -9,12 +9,24 @@
     <link rel="stylesheet" href="../styles/multiMedia.css">
 </head>
 <body>
-    
+    <style>
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        @media screen and (max-width: 768px){
+            .content-holder {
+                flex-direction: column;
+            }
+        }
+    </style>
     <div class="content-wrapper">
         <section class="content">
             <multimedia-header-co></multimedia-header-co>
             
-            <div style="display: flex; align-items: center;justify-content: space-between;">
+            <div class="content-holder">
                 <otherslider-co></otherslider-co>
                 <mediabox-co></mediabox-co>
             </div>

@@ -36,6 +36,12 @@ const topMediasStyle =`
             align-items: center;
             justify-content: center;
         }
+        @media screen and (max-width: 1024px){
+            aside {
+                width : 96vw;
+                margin : 14px 0;
+            }
+        }
     </style>
 `
 

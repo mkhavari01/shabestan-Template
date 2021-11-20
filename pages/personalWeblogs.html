@@ -14,6 +14,12 @@
             display: flex;
             justify-content: space-between;
         }
+        @media screen and (max-width: 1024px){
+            .content-holder {
+                flex-direction : column-reverse;
+            }
+            
+        }
     </style>
     
     
@@ -25,9 +31,11 @@
 
             <section class="content-holder">
                 <newsinfo-co></newsinfo-co>
-                <div>
+                <div class="page-info">
                     <pageinfo-co></pageinfo-co>
-                    <topmedias-co sideBar-width="100%" sideBar-margin="0 10px"></topmedias-co>
+                    <div>
+                        <topmedias-co sideBar-width="96%" sideBar-margin="10px 10px"></topmedias-co>
+                    </div>
                 </div>
             </section>
             

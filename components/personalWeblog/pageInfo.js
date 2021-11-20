@@ -19,6 +19,12 @@ const pageInfoStyle = `
             font-size: 13px;
             text-align: justify;
         }
+        @media screen and (max-width: 1024px){
+            .page-info {
+                height : fit-content;
+                margin : 0 10px;
+            }
+        }
     </style>
 `;
 

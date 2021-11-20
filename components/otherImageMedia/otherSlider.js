@@ -7,7 +7,7 @@ const otherSliderStyle = `
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 15px 0; 
+            margin: 15px 7px; 
             width : 675px;
             height : 450px;
         }
@@ -55,6 +55,12 @@ const otherSliderStyle = `
         }
         a img {
             width: 10px;
+        }
+        @media screen and (max-width: 768px){
+            .nav-example {
+                width: 320px;
+                height: 220px;
+            }
         }
     </style>
 `;

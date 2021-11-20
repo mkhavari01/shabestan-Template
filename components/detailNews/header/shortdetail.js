@@ -43,6 +43,9 @@ shortDetailStyles = `
             section{
                 flex-direction : column;
             }
+            section div{
+                margin : 0;
+            }
         }
         @media screen and (max-width: 425px){
             section{
@@ -52,14 +55,8 @@ shortDetailStyles = `
                 width : 278px;
                 height : 176px;
             }
-            section div{
-                margin : 0 20px;
-            }
             h2{
                 font-size : 16px;
-            }
-            h2,small{
-                padding : 0;
             }
             p{
                 font-size : 14px;

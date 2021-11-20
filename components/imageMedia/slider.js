@@ -22,12 +22,13 @@ const sliderStyle = `
         #next-button { 
             left: auto;
             right: 0px; 
+            
         }
         a.slide-button{
             position: absolute;
             top: 0px;
             left: 0px;
-            width: 150px;
+            width: 100px;
             height: 100%;
             color: #FFF;
             background-color: rgba(0,0,0,0.4);
@@ -41,6 +42,33 @@ const sliderStyle = `
         }
         a img {
             width: 50px;
+        }
+        @media screen and (max-width: 768px){
+            #myslider {
+                width : 300px ;
+                height : 324px;
+            }
+            #next-button{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                z-index: 12;
+                right: 25px;
+                top: auto;
+                background: gray;
+            }
+            #prev-button{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                z-index: 12;
+                left: 25px;
+                top: auto;
+                background: gray;
+            }
+            a img {
+                width : 10px;
+            }
         }
     </style>
 `;

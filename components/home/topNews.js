@@ -5,7 +5,7 @@ const topNewsStyle = `
         width: -webkit-fill-available;
         /* border: solid 0.5px gray; */
         border-top: 5px solid #e6dfc0;
-        padding: 10px 15px;
+        margin: 10px 15px;
         word-break : break-word;
     }
     .sideBar div {
@@ -41,6 +41,16 @@ const topNewsStyle = `
     .sideBar img{
         width : 150;
         height : 150px;
+    }
+    @media screen and (max-width: 1024px){
+        .sideBar {
+            margin : 0 10px;
+        }
+    }
+    @media screen and (max-width: 425px){
+        .sideBar section {
+            flex-direction : column;
+        }
     }
     </style>
 `

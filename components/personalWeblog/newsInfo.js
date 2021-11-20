@@ -2,6 +2,9 @@ const newsInfo = document.createElement('template');
 
 const newsInfoStyle = `
     <style>
+        img {
+            width : 400px;
+        }
         h1{
             text-align: center;
             font-size: 30px;
@@ -39,6 +42,19 @@ const newsInfoStyle = `
         .content-holder{
             display: flex;
             justify-content: space-between;
+        }
+        @media screen and (max-width: 1024px){
+            .newsInfo {
+                flex-direction : column;
+            }
+            img {
+                margin : 0 10px;
+            }
+        }
+        @media screen and (max-width: 768px){
+            img {
+                width : 300px;
+            }
         }
     </style>
 `;

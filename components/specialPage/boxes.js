@@ -38,6 +38,16 @@ const boxesStyles = `
             border-radius : 5px;
             height : fit-content;
         }
+        @media screen and (max-width: 1024px){
+            .wrapper {
+                width : 100%;
+                flex-direction : column;
+                align-items : center;
+            }
+            .content {
+                width : 90%;
+            }
+        }
     </style>
 `;
 

@@ -5,7 +5,7 @@ const styles = `
     <style>
         div img{
             width : 24px;
-            margin : 10px 20px 0;
+            margin : 10px 16px 0;
         }
         nav{
             background : #00247e;

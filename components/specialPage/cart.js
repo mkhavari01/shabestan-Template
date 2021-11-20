@@ -24,6 +24,12 @@ const cartStyles = `
             text-decoration: none;
             color: #00247e;
         }
+        @media screen and (max-width: 425px){
+            .weblogItem {
+                width: 240px;
+                height: 100px;
+            }
+        }
     </style>
 `;
 

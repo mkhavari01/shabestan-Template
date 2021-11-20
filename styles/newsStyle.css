@@ -12,7 +12,12 @@ sidebar-co{
     width: 220px;
     margin: 10px 25px;;
 }
-
+@media screen and (max-width: 1024px){
+    .wrapper-holder{
+        width: fit-content;
+        padding : 0 16px 0 0;
+    }
+}
 @media screen and (max-width: 960px){
     .wrapper{
         flex-direction: column;
@@ -22,6 +27,6 @@ sidebar-co{
     }
     .wrapper-holder{
         width: fit-content;
-        margin: 0 10px;
+        padding: 0 16px;
     }
 }

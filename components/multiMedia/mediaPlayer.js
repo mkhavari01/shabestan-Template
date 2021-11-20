@@ -4,8 +4,6 @@ const mediaPlayerStyle = `
     <style>
         div {
             position: relative;
-            width: 724px;
-            height: 413px;
         }
         #caption {
             position: absolute;
@@ -19,6 +17,16 @@ const mediaPlayerStyle = `
             transition: all .4s;
             word-break : break-word;
         }
+        img {
+            width : 724px;
+            height : 413px;
+        }
+        @media screen and (max-width: 768px){
+            img {
+                width : 230px;
+                height : 210px;
+            }
+        }
     </style>
 `;
 
@@ -30,7 +38,7 @@ class MediaPlayer extends HTMLElement{
         this.shadowRoot.innerHTML = `
         ${mediaPlayerStyle}
         <div>
-            <img src="http://media.shabestan.ir/Larg_ph/1400/08/24/IMG00032420.jpg" alt="news" width="724px" height="413px"/>
+            <img src="http://media.shabestan.ir/Larg_ph/1400/08/24/IMG00032420.jpg" alt="news"/>
             <div id="caption">
                 اولین جشنواره ملی هنرهای تجسمی 
             </div>
