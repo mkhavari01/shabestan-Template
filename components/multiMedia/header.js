@@ -15,6 +15,7 @@ multiMediaHeaderStyle = `
         }
         li {
             padding: 5px 15px;
+            font-size : 14px;
         }
         li:hover{
             background : #00247e;
@@ -56,6 +57,11 @@ class MultiMediaHeader extends HTMLElement{
                 <li>
                     <a href="../pages/otherImageMedia.html">
                         عکس های دیگر 
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/images.html">
+                        خبر و عکس ها
                     </a>
                 </li>
                 <li>
