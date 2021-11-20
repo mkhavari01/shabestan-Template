@@ -55,6 +55,7 @@ mainLayout.innerHTML = `
                 <sidebar-co title="عناوین خبری" ></sidebar-co>
             </section>
             <section class="main-news">
+                <div><marqueee-co></marqueee-co></div>
                 <main-news-co></main-news-co>
                 <news-suggest-co></news-suggest-co>
                 <topnews-co title="عناوین خبری امروز" ></topnews-co>
