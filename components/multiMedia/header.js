@@ -44,6 +44,11 @@ class MultiMediaHeader extends HTMLElement{
                     </a>
                 </li>
                 <li>
+                    <a href="../pages/mediaPage.html">
+                        چند رسانه ای دیگر
+                    </a>
+                </li>
+                <li>
                     <a href="../pages/imageMedia.html">
                         عکس ها 
                     </a>

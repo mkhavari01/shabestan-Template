@@ -18,6 +18,25 @@ const mediadescStyle = `
             justify-content: space-between;
             margin: 10px 0;
         }
+        @media screen and (max-width: 980px){
+            .main {
+                flex-direction : column-reverse;
+            }
+            .text-holder {
+                text-align: center;
+                font-size: 20px;
+            }
+            a{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 40px;
+            }
+            .photo-holder a img{
+                width: 287px;
+                height: 176px;
+            }
+        }
     </style>
 `;
 
