@@ -62,6 +62,7 @@ mainLayout.innerHTML = `
             </section>
             <section class="left-sidebar">
                 <sidebar-co title="عناوین بسیار مهم" ></sidebar-co>
+                <bookslider-co></bookslider-co>
             </section>
         </div>
     </div>

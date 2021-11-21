@@ -9,9 +9,24 @@
     width: 1024px;
 }
 
+div {
+    display: flex;
+}
+
 @media screen and (max-width: 1024px){
     #content topnews-co{
         width: 768px;
+    }
+    div {
+        flex-direction: column;
+    }
+    div search-co {
+        padding: 0 50px;
+    }
+    div txtslider-co{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 

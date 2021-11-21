@@ -9,13 +9,20 @@
     <link rel="stylesheet" href="/styles/list.css">
 </head>
 <body>
-
     <header-layout-co>
         <input slot="pageValue" class="pageValue" type="hidden" value="true"/>
     </header-layout-co>
     <section id="content">
+        <div>
+            <txtslider-co></txtslider-co>
+            <search-co></search-co>
+        </div>
         <topnews-co title="عناوین خبری دیروز" ></topnews-co>
     </section>
+    <!-- lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
+    <script src="../components/home/txtslider.js"></script>
+    <script src="../components/home/searchBox.js"></script>
     <!-- components Scipts -->
     <script src="../components/home/pages.js"></script>
     <script src="../components/home/nestedPages.js"></script>
