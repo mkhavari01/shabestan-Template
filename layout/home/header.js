@@ -18,7 +18,9 @@ const styles = `
         }
         @media screen and (max-width: 960px) {
             nav {
-                display : none
+                opacity : 0;
+                transition : .4s;
+                position : absolute;
             }
             .menu{
                 display : block;
@@ -58,9 +60,9 @@ class Header extends HTMLElement {
         this.state.isShown = !this.state.isShown
 
         if(this.state.isShown){
-            this.shadowRoot.querySelector('nav').style.display = 'block';
+            this.shadowRoot.querySelector('nav').style.opacity = '1';
         }else{
-            this.shadowRoot.querySelector('nav').style.display = 'none';
+            this.shadowRoot.querySelector('nav').style.opacity = '0';
         }
     });
     

@@ -10,7 +10,8 @@ const newsSuggestStyle = `
         .test{
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
+            padding : 0 16px;
         }
       
         .test img{

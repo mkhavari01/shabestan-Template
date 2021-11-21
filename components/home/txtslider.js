@@ -41,11 +41,16 @@ const marqueeeStyles = `
         width: 80%;
         border-bottom: 5px solid #e6dfc0;
     }
+    @media screen and (max-width: 960px) {
+        .container {
+            display : none;
+        }
+    }
     </style>
 `;
 
 
-class Marqueee extends HTMLElement {
+class TxtSlider extends HTMLElement {
     constructor(){
         super();
 
@@ -93,4 +98,4 @@ class Marqueee extends HTMLElement {
     }
 }
 
-window.customElements.define('marqueee-co',Marqueee);
+window.customElements.define('txtslider-co',TxtSlider);

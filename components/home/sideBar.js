@@ -34,6 +34,7 @@ async function main() {
             </div>
             ${extraHtml}
         </aside>
+        <a href="#" class="more">بیشتر</a>
     `
     sideBar.innerHTML = html
 
