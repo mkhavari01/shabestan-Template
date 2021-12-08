@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+}
+header {
+    background: url(../assets/images/header-strip.png);
+    /* background-image: linear-gradient(#000046, #1cb5e0); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    direction: rtl;
+    color: cornsilk;
+}
+section {
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../assets/images/header.png);
+}
+section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+    flex-wrap: wrap;
+    direction: rtl;
+    justify-content: flex-end;
+}
+ul li {
+    padding: 0 10px;
+}
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    transition: .4s;
+}
+ul li a:hover {
+    color:#fe9e09 ;
+}
+#logo {
+    display: flex;
+    margin-bottom: 5px;
+}
+#logo img {
+    width: 270px;
+}
+ul li a img {
+    width: 15px;
+}
+ul li a img:hover {
+    background: white;
+}
+#times {
+    flex-direction: row-reverse;
+    position: relative;
+}
+#times a {
+    position: absolute;
+    right: 30px;
+    top: 16px;
+}
+#times ul{
+    flex-direction: column;
+    font-size: 12px;
+}
+/*  */
+.langs {
+    align-items: flex-start;
+}
+.medias {
+    justify-content: flex-start;
+}
+footer .image-wrapper{
+    background: url(../assets/images/bottom-strip.png);
+    height: 103px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+footer .image-wrapper img {
+    width: 86px;
+    position: absolute;
+    top: 23px;
+}
+footer .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #333333;
+    padding: 15px 0;
+}
+.hypermedia {
+    margin-top: 30px;
+}
+.helpful-links {
+    /* margin: 30px; */
+    margin: 10px 15px !important;
+    justify-content: center;
+    align-items: center;
+}
+.helpful-links li {
+    border-left: solid .5px gray;
+}
+.copyright {
+    text-align: center;
+    color: white;
+    direction: ltr;
+    font-family: sans-serif;
+    padding: 35px 0 10px 0;
+}
+@media screen and (max-width: 660px) {
+    .medias {
+        display: none;
+    }
+    .langs {
+        align-items: center;
+    }
+    section {
+        justify-content: center;
+    }
+    .helpful-links li {
+        border-left: none !important;
+    }
+}
+@media screen and (max-width: 425px) {
+    .langs ul{
+        display: none;
+    }
+}
