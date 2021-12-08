@@ -21,7 +21,7 @@ const pagesStyle = `
         }
         li a:hover{
             color : #00247e ; 
-            background : #02acdd;
+            background : #0099ff;
             transition : .4s;
         }
         @media screen and (max-width: 960px) {

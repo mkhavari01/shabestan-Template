@@ -12,9 +12,12 @@ const styles = `
             display: flex;
             align-items: center;
             justify-content: center;
+            z-index : 1;
         }
         .menu{
-            display : none
+            display : none;
+            position: absolute;
+            top: 37px;
         }
         @media screen and (max-width: 960px) {
             nav {

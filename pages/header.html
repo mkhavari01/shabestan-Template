@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <style>
+        body {
+            margin: 0;
+        }
+        header {
+            background: url(../assets/images/header-strip.png);
+            /* background-image: linear-gradient(#000046, #1cb5e0); */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            direction: rtl;
+            color: cornsilk;
+        }
+        section {
+            width: 1024px;
+            display: flex;
+            justify-content: space-between;
+            background-image: url(../assets/images/header.png);
+        }
+        section div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row-reverse;
+            margin: 0;
+            flex-wrap: wrap;
+            direction: rtl;
+            justify-content: flex-end;
+        }
+        ul li {
+            padding: 0 10px;
+        }
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 13px;
+            transition: .4s;
+        }
+        ul li a:hover {
+            color:#fe9e09 ;
+        }
+        #logo {
+            display: flex;
+            margin-bottom: 5px;
+        }
+        #logo img {
+            width: 270px;
+        }
+        ul li a img {
+            width: 15px;
+        }
+        ul li a img:hover {
+            background: white;
+        }
+        #times {
+            flex-direction: row-reverse;
+            position: relative;
+        }
+        #times a {
+            position: absolute;
+            right: 30px;
+            top: 16px;
+        }
+        #times ul{
+            flex-direction: column;
+            font-size: 12px;
+        }
+        /*  */
+        .langs {
+            align-items: flex-start;
+        }
+        .medias {
+            justify-content: flex-start;
+        }
+        @media screen and (max-width: 660px) {
+            .medias {
+                display: none;
+            }
+            .langs {
+                align-items: center;
+            }
+            section {
+                justify-content: center;
+            }
+            .helpful-links li {
+                border-left: none !important;
+            }
+        }
+        @media screen and (max-width: 425px) {
+            .langs ul{
+                display: none;
+            }
+        }
+    </style>
+    <header>
+        <section>
+            <div class="langs">
+                <ul>
+                    <li>
+                        <a href="#">
+                            English
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            العربی
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Azerbaycanca
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            اردو
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Indonesia
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            بنگلہ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Russia
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" id="logo">
+                    <img src="../assets/images/logo-main.png" alt="shabestan logo">
+                </a>
+            </div>
+            <div class="medias">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/medias/icons8-facebook-50.png" title="فیسبوک">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/medias/icons8-facebook-50.png" title="فیسبوک">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/medias/icons8-facebook-50.png" title="فیسبوک">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/medias/icons8-facebook-50.png" title="اینستاگرام">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/medias/icons8-facebook-50.png" title="گوگل پلاس">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/medias/icons8-facebook-50.png" title="تلگرام">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/medias/icons8-facebook-50.png" title="توییتر">
+                        </a>
+                    </li>
+                </ul>
+                <div id="times">
+                    <a href="#">
+                        <img src="../assets/images/medias/logo-02.png" alt="" width="170px">
+                    </a>
+                    <ul>
+                        <li>
+                            <time>چهارشنبه ۱۷ آذر ۱۴۰۰</time>
+                        </li>
+                        <li>
+                            <time>
+                                الأربعاء ٣ جمادى الأولى ١٤٤٣
+                            </time>
+                        </li>
+                        <li>
+                            <time>
+                                Wednesday, December 8, 2021
+                            </time>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </header>
+    <header-layout-co>
+        <input slot="pageValue" class="pageValue" type="hidden" value="false"/>
+    </header-layout-co>
+    <style>
+        footer .image-wrapper{
+            background: url(../assets/images/bottom-strip.png);
+            height: 103px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        footer .image-wrapper img {
+            width: 86px;
+            position: absolute;
+            top: 23px;
+        }
+        footer .details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #333333;
+            padding: 15px 0;
+        }
+        .hypermedia {
+            margin-top: 30px;
+        }
+        .helpful-links {
+            /* margin: 30px; */
+            margin: 10px 15px !important;
+            justify-content: center;
+            align-items: center;
+        }
+        .helpful-links li {
+            border-left: solid .5px gray;
+        }
+        .copyright {
+            text-align: center;
+            color: white;
+            direction: ltr;
+            font-family: sans-serif;
+            padding: 35px 0 10px 0;
+        }
+    </style>
+    <footer>
+        <div class="image-wrapper">
+            <img src="../assets/images/imam.jpg" alt="iran's leader">
+        </div>
+        <div class="details">
+            <img src="../assets/images/logo-03.png" alt="">
+            <ul class="helpful-links">
+                <li>
+                    <a href="#">لینک مفید</a>
+                </li>
+                <li>
+                    <a href="#">لینک مفید</a>
+                </li>
+                <li>
+                    <a href="#">لینک مفید</a>
+                </li>
+                <li>
+                    <a href="#">لینک مفید</a>
+                </li>
+                <li>
+                    <a href="#">لینک مفید</a>
+                </li>
+                <li>
+                    <a href="#">لینک مفید</a>
+                </li>
+                <li>
+                    <a href="#">لینک مفید</a>
+                </li>
+                <li>
+                    <a href="#">لینک مفید</a>
+                </li>
+                <li>
+                    <a href="#">لینک مفید</a>
+                </li>
+                <li>
+                    <a href="#">لینک مفید</a>
+                </li>
+                <li>
+                    <a href="#">لینک مفید</a>
+                </li>
+            </ul>
+            <p class="copyright">
+                Copyright © 2021 Shabestan News Agency. all rights reserved.
+            </p>
+            <a href="#">
+                <img src="../assets/images/logo_hyper.png" alt="" class="hypermedia">
+            </a>
+        </div>
+    </footer>
+    <script src="../layout/home/header.js"></script>
+    <script src="../components/home/pages.js"></script>
+</body>
+</html>
